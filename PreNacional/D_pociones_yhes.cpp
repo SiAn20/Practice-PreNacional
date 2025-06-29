@@ -1,18 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define int long long
 
 void solve(){
-    string s;
-    cin >> s;
-    set<char> confundibles = {'l', 'I', 'O', '0', 'B','8'};
+    int N, M;
+    cin >> N >> M;
 
-    for (int i = 0; i < s.size(); i++) {
-        if(confundibles.count(s[i]) > 0) {
-            cout << "SI" << endl;
-            return;
-        }
-    } 
-    cout << "NO" << endl;
+    while (M--){
+        
+    }
 }
 
 signed main() {
@@ -20,7 +16,6 @@ signed main() {
     cin.tie(NULL);
     cout.tie(NULL);
 
-    
     solve();
 }
 

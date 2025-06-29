@@ -16,7 +16,7 @@ void solve(){
             eliminar++;
         }
     }
-    cout << eliminar;
+    cout << eliminar << endl;
 }
 
 signed main() {
