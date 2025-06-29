@@ -18,8 +18,9 @@ signed main(){
                 res = "NO";
                 break;
             }
-
         }
     }
     cout << res << endl;
 }
+
+//by Sidney Angelly Sahonero Garrado
