@@ -8,18 +8,21 @@ void solve() {
   unordered_set<string> set;
   cin >> N;
   vector<string> S(N);
-  
+
   for (int i = 0; i < N; i++) {
     cin >> S[i];
   }
+
   for (int i = 0; i < N; i++) {
-    for (int j = i; j < N; j++) {
-      if (set.count(S[i] + S[j]) == 0) {
-        combinaciones += 1;
-        set.insert(S[i] + S[j]);
+    for (int j = 0; j < N; j++) {
+      string combinada = S[i] + S[j];
+      if ((set.count(combinada) == 0) && (i != j)) {
+        combinaciones++;
+        set.insert(combinada);
       }
     }
   }
+
   cout << combinaciones << end;
 }
 
