@@ -5,9 +5,10 @@ using namespace std;
 
 void solve() {
   int N, combinaciones = 0;
-  vector<string> S;
   unordered_set<string> set;
   cin >> N;
+  vector<string> S(N);
+  
   for (int i = 0; i < N; i++) {
     cin >> S[i];
   }
