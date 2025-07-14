@@ -7,18 +7,23 @@ void solve() {
   int N, combinaciones = 0;
   vector<string> S;
   unordered_set<string> set;
+
   cin >> N;
+  S.resize(N); // ← CORRECCIÓN PRINCIPAL
   for (int i = 0; i < N; i++) {
     cin >> S[i];
   }
+
   for (int i = 0; i < N; i++) {
     for (int j = i; j < N; j++) {
-      if (set.count(S[i] + S[j]) == 0) {
-        combinaciones += 1;
-        set.insert(S[i] + S[j]);
+      string combinada = S[i] + S[j];
+      if (set.count(combinada) == 0) {
+        combinaciones++;
+        set.insert(combinada);
       }
     }
   }
+
   cout << combinaciones << end;
 }
 
