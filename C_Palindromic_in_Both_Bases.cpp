@@ -1,11 +1,10 @@
 // Sidney Angelly Sahonero Garrado
 #include <bits/stdc++.h>
 using namespace std;
-#define end '\n'
+#define endl '\n'
 
 void solve() {
-    int A, N;
-    cin >> A >> N;
+
 }
 
 signed main() {
@@ -13,7 +12,10 @@ signed main() {
   cin.tie(NULL);
   cout.tie(NULL);
 
-  solve();
+  int t;
+  cin >> t;
+  while (t--)
+    solve();
 }
 
 /*
