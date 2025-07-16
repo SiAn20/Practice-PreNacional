@@ -4,10 +4,14 @@ using namespace std;
 #define endl '\n'
 
 void solve() {
-  int N, S;
-  cin >> N;
-  while (N--) {
-    cin >> S;
+  string p;
+  int l;
+  cin >> p >> l;
+
+  if (p.size() >= l) {
+    cout << "Yes" << endl;
+  } else {
+    cout << "No" << endl;
   }
 }
 
@@ -16,10 +20,7 @@ signed main() {
   cin.tie(NULL);
   cout.tie(NULL);
 
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  solve();
 }
 
 /*

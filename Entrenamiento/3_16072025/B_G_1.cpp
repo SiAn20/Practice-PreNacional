@@ -4,7 +4,20 @@ using namespace std;
 #define endl '\n'
 
 void solve() {
+  int n, k, races = 0;
+  cin >> n;
+  vector<int> a(n);
 
+  for (int &x : a) {
+    cin >> x;
+  }
+  cin >> k;
+  for (int i = 0; i < n; i++) {
+    if (k <= a[i]) {
+      races++;
+    }
+  }
+  cout << races << endl;
 }
 
 signed main() {
@@ -12,10 +25,7 @@ signed main() {
   cin.tie(NULL);
   cout.tie(NULL);
 
-  int t;
-  cin >> t;
-  while (t--)
-    solve();
+  solve();
 }
 
 /*
