@@ -2,10 +2,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
+#define int long long
 
 void solve() {
-  int n, q;
-  cin >> n >> q;
+  int q, x, c, x, k;
+  cin >> q;
+  while (q--) {
+    cin >> x;
+    if (x == 1) {
+      cin >> c >> x;
+    } else {
+      cin >> k;
+    }
+  }
 }
 
 signed main() {
